@@ -1,0 +1,58 @@
+<div class="profile">
+    
+    <div class="post-content profile-content">
+        <div class="profile-image">
+            <% if (theme.profile.image) {%>
+                <img src="<%= url_for(theme.profile.image)%>" alt="featured_image">
+            <% } %>  
+        </div>
+        <div class="profile-title">
+            <%=theme.profile.title%>
+        </div>
+        <div class="profile-body">
+            <%=theme.profile.body%>
+        </div>
+        
+        <% Object.keys(theme.profile.links).forEach(key => { %>
+            <div class="profile-link">
+                <a href="<%= url_for(theme.profile.links[key])%>"><%=key%></a> 
+            </div>           
+        <% }); %>
+
+        <div class="post-list">
+            <!-- <% var last_year = ''; %> -->
+            <% page.posts.each(function (post) { %>
+        
+                <!-- <% var cur_year = post.date.year(); %>
+        
+                <% if(last_year !== cur_year){ %>
+                    <div class="year-title"><%- cur_year %></div>
+                <% last_year = cur_year; } %> -->
+        
+                <div class="main-page-post-list-item">
+                    <div class="post-title">
+                    <a href="<%- url_for(post.path) %>">
+                        <% if (post.title) {%>
+                            <%= post.title %>
+                        <% } else {%>
+                            *Untitled
+                        <% } %>
+                        </a> 
+                    </div>
+                    
+                    <span class="post-date"><%- date(post.date, theme.date_format) %></span>
+
+                    <div class="post-content">
+                        <%-post.content%>
+                    </div> 
+                </div>
+        
+            <% }) %>
+            <div id="paginator">
+                <%- partial('partials/paginator') %>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
