@@ -20,7 +20,7 @@ function toggleMenu() {
     var menuButton = document.getElementById("menu-btn");  
     if(menuList.classList.contains("active")){
       menuList.classList.remove("active");
-      menuButton.innerHTML = "MENU";
+      menuButton.innerHTML = "☰";
     }else{
       menuList.classList.add("active");
       menuButton.innerHTML = "<div class=\"icon arrow-up\"> </div>";

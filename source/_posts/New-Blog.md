@@ -7,7 +7,7 @@ categories:
 featured_image: /New-Blog/default-featured-image.png 
 ---
 
-I set up this blog here for tech / video game stuff. I'm using [Hexo](https://hexo.io) which is pretty nice, and [Surge](http://surge.sh), which is amazing. The theme is based on [Frame](https://github.com/zoeingwingkei/frame/), but I've modified it a bit.
+I set up this blog here for tech / video game stuff. I'm using [Hexo](https://hexo.io) which is pretty nice, and [Surge](http://surge.sh), which is amazing. The Hexo theme is [Frame](https://github.com/zoeingwingkei/frame/), with a couple of modifications.
 
 The cool thing about Hexo is that you write all posts locally as markdown files, and then Hexo generates a full blog made out of just static webpages, including tags, archives, etc - which means you don't need a big fancy CMS or anything. And because the blog is just made out of static pages, you can host it with something simple like Surge.
 
