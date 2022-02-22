@@ -1,7 +1,10 @@
 ---
 title: Two Player
 date: 2021-01-17 20:00:21
-tags: [game, 7dfps]
+tags: [game, 7dfps, unity]
+categories:
+- [gallery]
+featured_image: /Two-Player/twop.png
 ---
 
 I made a game for 7DFPS about the social interactions that happen when playing a couch co-op game.

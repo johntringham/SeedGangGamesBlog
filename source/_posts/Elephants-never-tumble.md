@@ -1,7 +1,10 @@
 ---
 title: Elephants never tumble
 date: 2021-10-06 19:04:25
-tags: [game, ludum dare]
+tags: [game, ludum dare, unity]
+categories:
+- [gallery]
+featured_image: /Elephants-never-tumble/elephantsnevertumble.PNG
 ---
 
 Here's a dumb game I made for Ludum Dare, where you stack items ontop of an elephant balancing over a gourge.
