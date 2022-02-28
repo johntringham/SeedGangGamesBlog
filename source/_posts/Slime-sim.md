@@ -4,7 +4,7 @@ categories:
   - - gallery
 featured_image: /Slime-sim/slime.png
 date: 2022-02-28 19:29:26
-tags:
+tags: [devlog, prototype]
 ---
 
 Trudging through old projects and found my [slime-mold](https://en.wikipedia.org/wiki/Slime_mold) [simulation](https://en.wikiversity.org/wiki/Slime_Mould_Algorithm) and polished it up a bit:
