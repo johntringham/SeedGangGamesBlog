@@ -22,6 +22,6 @@ The basic way a slime mold sim works is by creating millions of cells, who have 
 
 The way I've implemented it in Unity is to use compute shaders to run the actual sim, using a bitmap to store the scent values.
 
-The extra layer here in the above video is that I'm also using a render texture to add extra data to the sim to create 'fake' scent values. This leads to creating a sort of "dithering" effect, where the slime mold sim accidentally recreates a ghost of the image from the render texture.
+The extra layer here in the above videos is that I'm also using a render texture to add extra data to the sim to create 'fake' scent values. This leads to creating a sort of "dithering" effect, where the slime mold sim accidentally recreates a ghost of the image from the render texture out of simulated slime.
 
 Because of the amount of variables (such as the speed of the cells, or how fast they can turn, or how quickly the scent dissolves, etc), slime molds have a huge parameter space. In order to play around with it easier, I hooked up these variables to my midi controller to it via [MINIs](https://github.com/keijiro/Minis) so you could fiddle about by turning physical knobs rather than using Unity sliders.
