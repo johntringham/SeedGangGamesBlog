@@ -7,7 +7,7 @@ date: 2022-02-28 19:29:26
 tags: [devlog, prototype]
 ---
 
-Trudging through old projects and found my [slime-mold](https://en.wikipedia.org/wiki/Slime_mold) [simulation](https://en.wikiversity.org/wiki/Slime_Mould_Algorithm) and polished it up a bit:
+Trudging through old projects and found my [slime-mold](https://en.wikipedia.org/wiki/Slime_mold) simulation and polished it up a bit:
 
 {% html 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">using my slime mold sim to do a form of dithering<a href="https://twitter.com/hashtag/madewithunity?src=hash&amp;ref_src=twsrc%5Etfw">#madewithunity</a> <a href="https://t.co/q9zdRm51AW">pic.twitter.com/q9zdRm51AW</a></p>&mdash; john tringham (@zappablamma) <a href="https://twitter.com/zappablamma/status/1498376821380947971?ref_src=twsrc%5Etfw">February 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> %}
@@ -18,7 +18,7 @@ Here's an earlier vid - same simulation but with a different set of parameters a
 <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">looking at trees<a href="https://twitter.com/hashtag/madewithunity?src=hash&amp;ref_src=twsrc%5Etfw">#madewithunity</a> <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsaturday</a> <a href="https://t.co/fZKReM5EwD">pic.twitter.com/fZKReM5EwD</a></p>&mdash; john tringham (@zappablamma) <a href="https://twitter.com/zappablamma/status/1378760560565743616?ref_src=twsrc%5Etfw">April 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 %}
 
-The basic way a slime mold sim works is by creating millions of cells, who have a position and angle (to specify which way they're facing). Each frame, cells create a small scent behind them, and this scent spreads out and disolves over time. Cells look at positions in front of them and turn slightly in order to face the strongest scent it can find. 
+The basic way a slime mold sim works is by creating millions of cells, who have a position and angle (to specify which way they're facing). Each frame, cells create a small scent behind them, and this scent spreads out and disolves over time. Cells look at positions in front of them and turn slightly in order to face the strongest scent it can find, and then move in that direction.
 
 The way I've implemented it in Unity is to use compute shaders to run the actual sim, using a bitmap to store the scent values.
 
