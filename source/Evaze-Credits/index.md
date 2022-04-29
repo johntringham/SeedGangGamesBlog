@@ -7,7 +7,7 @@ Evaze was made by John Tringham, working under the name Seed Gang Games. You can
 
 The soundtrack was made by the very talented [Thief Logic](https://open.spotify.com/artist/6VlBCFRshx9KBDfYIVz0U6?si=3hh-80KmTo2CSYbJAYhRug).
 
-Testers/QA/advisers/patient friends:
+Testers/QA/advisers/patient friends/special thanks to:
 - Elizabeth Mahoney
 - Nathanial Sear
 - Jonathan Rowntree
@@ -21,7 +21,7 @@ Testers/QA/advisers/patient friends:
 - The original Seed Gang
 - Quiche Crew 
 - Swamp Boys
-- Red-UI
+- Red-UI and 
 - My brother, sister, mum and dad
 - Everyone who told me to hurry up and release the game already
 - Everyone who I forgot to put on this list (sorry)
