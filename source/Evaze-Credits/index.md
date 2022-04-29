@@ -7,7 +7,7 @@ Evaze was made by John Tringham, working under the name Seed Gang Games. You can
 
 The soundtrack was made by the very talented [Thief Logic](https://open.spotify.com/artist/6VlBCFRshx9KBDfYIVz0U6?si=3hh-80KmTo2CSYbJAYhRug).
 
-Tester/advisers/patient friends:
+Testers/QA/advisers/patient friends:
 - Elizabeth Mahoney
 - Nathanial Sear
 - Jonathan Rowntree
@@ -17,14 +17,19 @@ Tester/advisers/patient friends:
 - Tom Howlett
 - Chris and Dan Bison
 - Connie Triggs
-- Red-UI
+- Sam Hooper
 - The original Seed Gang
-- Quiche Crew and the Swamp Boys
+- Quiche Crew 
+- Swamp Boys
+- Red-UI
 - My brother, sister, mum and dad
-- Everyone I forgot to put on this list (sorry)
+- Everyone who told me to hurry up and release the game already
+- Everyone who I forgot to put on this list (sorry)
 
-The game was made in Unity, and was originally prototyped for Ludum Dare 47 - you can play this version in your browser for free on [itch.io](https://zb.itch.io/evaze).
+The game was made in Unity, and was originally prototyped for Ludum Dare 47 - you can play the original version in your browser for free on [itch.io](https://zb.itch.io/evaze).
 
 The sound effects were either recorded or made using [Chiptone](https://sfbgames.itch.io/chiptone), and then edited in [Audacity](https://www.audacityteam.org).
+
+If you liked the game please remember to give it a review on the App Store/Google Play! It really helps
 
 Thanks for playing!
