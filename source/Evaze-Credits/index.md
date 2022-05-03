@@ -21,7 +21,7 @@ Testers/QA/advisers/patient friends/special thanks to:
 - The original Seed Gang
 - Quiche Crew 
 - Swamp Boys
-- Red-UI and 
+- Red-UI, and everyone at Acturis and BBD
 - My brother, sister, mum and dad
 - Everyone who told me to hurry up and release the game already
 - Everyone who I forgot to put on this list (sorry)
