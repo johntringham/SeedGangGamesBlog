@@ -30,6 +30,8 @@ The game was made in Unity, and was originally prototyped for Ludum Dare 47 - yo
 
 The sound effects were either recorded or made using [Chiptone](https://sfbgames.itch.io/chiptone), and then edited in [Audacity](https://www.audacityteam.org).
 
-If you liked the game please remember to give it a review on the App Store/Google Play! It really helps
+If you liked the game please remember to give it a review on the App Store/Google Play! It really helps.
+
+If you've found a bug or have any questions please let me know! Send an email to <a href="mailto:john@seedganggames.com?subject=Evaze Bug Report">john@seedganggames.com</a> and I'll take a look and try to sort it out.
 
 Thanks for playing!
