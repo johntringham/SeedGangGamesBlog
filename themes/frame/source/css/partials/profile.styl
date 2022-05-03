@@ -4,15 +4,17 @@
     flex-direction row-reverse
     
     .profile-content 
-        margin 0 $margin-l-0 0 0
+        margin 0 0 0 0
 
         .profile-title
             margin-top 0 
             margin-bottom $margin-m-0
+            text-align: center
             
         .profile-body
             margin-top 0
             margin-bottom $margin-l-1
+            text-align: center
 
         .profile-title
             text-style(heading-h1)
@@ -27,12 +29,22 @@
             
 
     .profile-image
-        width 89px
+        width 40%
         float right
+        text-align: center
+
+        img
+            width 89px
+            margin-left -20px
 
     .post-title
         margin-bottom $margin-m-1
+        margin-top 30px
         text-style(heading-h1)
+        text-align: center
+
+    .post-date
+        text-align: center
 
     .main-page-post-list-item
         padding-top 20px
@@ -40,7 +52,7 @@
         border solid 2px $color-text-primary
         border-style solid none none none 
 
-@media (max-width: 480px)
+@media (max-width: 680px)
     .profile
         flex-wrap wrap
         
