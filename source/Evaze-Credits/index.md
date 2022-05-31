@@ -26,7 +26,7 @@ Testers/QA/advisers/patient friends/special thanks to:
 - Everyone who told me to hurry up and release the game already
 - Everyone who I forgot to put on this list (sorry)
 
-Big special thanks to everyone who played and gave feedback on the original Ludum Dare prototype, especially [Randomise User](https://youtu.be/fTj2jiC6yZM?t=592)!
+Big special thanks to everyone who played and gave feedback on the original Ludum Dare prototype, especially [Randomise User](https://youtu.be/fTj2jiC6yZM?t=592) for including it in their youtube series!
 
 The game was made in Unity, and was originally prototyped for Ludum Dare 47 - you can play the original version in your browser for free on [itch.io](https://zb.itch.io/evaze).
 
