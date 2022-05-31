@@ -18,6 +18,9 @@ Testers/QA/advisers/patient friends/special thanks to:
 - Chris and Dan Bison
 - Connie Triggs
 - Sam Hooper
+- Daniel Linssen
+- Randomise User
+- Everyone who played and gave feedback on the original Ludum Dare prototype
 - The original Seed Gang
 - Quiche Crew 
 - Swamp Boys
