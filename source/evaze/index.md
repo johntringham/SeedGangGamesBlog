@@ -29,7 +29,7 @@ Download for iOS on the Apple App Store
 <br/>
 <br/>
 <a href='https://play.google.com/store/apps/details?id=com.johntringham.Evaze&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-<img alt='Get it on Google Play' src='/evaze/downloadongoogleplay.png' style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px;"/>
+<img alt='Get it on Google Play' src='/evaze/downloadongoogleplay.png' style="display: inline-block; overflow: hidden; width: 250px;"/>
 <br/>
 Download for Android on Google Play
 </a>
