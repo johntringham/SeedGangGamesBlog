@@ -21,17 +21,17 @@ A fast paced puzzle-arcade mobile game, made by John Tringham
 
 <div style="text-align: center;">
 
-<a href='https://play.google.com/store/apps/details?id=com.johntringham.Evaze&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-<img alt='Get it on Google Play' src='/evaze/downloadongoogleplay.png' style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"/>
-<br/>
-Download for Android on Google Play
-</a>
-<br/>
-<br/>
 <a href="https://apps.apple.com/us/app/evaze/id1622609861?itsct=apps_box_badge&amp;itscg=30200">
 <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1654560000&h=76ffee344cdb0e21b2fc5e69f18f1396" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;">
 <br/>
 Download for iOS on the Apple App Store
+</a>
+<br/>
+<br/>
+<a href='https://play.google.com/store/apps/details?id=com.johntringham.Evaze&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+<img alt='Get it on Google Play' src='/evaze/downloadongoogleplay.png' style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px;"/>
+<br/>
+Download for Android on Google Play
 </a>
 
 </div>
