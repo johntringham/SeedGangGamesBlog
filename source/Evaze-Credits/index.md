@@ -3,7 +3,7 @@ title: Evaze Credits
 date: 2022-04-29 17:04:56
 ---
 
-[Evaze](http://blog.seedganggames.com/evaze/) was made by John Tringham, working under the name Seed Gang Games. You can see what else I've been up to on this website, or on [twitter](https://twitter.com/zappablamma).
+[Evaze](http://blog.seedganggames.com/evaze/) is developed by John Tringham, working under the name Seed Gang Games. You can see what else I've been up to on this website, or on [twitter](https://twitter.com/zappablamma).
 
 The soundtrack was made by the very talented [Thief Logic](https://open.spotify.com/artist/6VlBCFRshx9KBDfYIVz0U6?si=3hh-80KmTo2CSYbJAYhRug).
 
