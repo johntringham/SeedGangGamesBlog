@@ -1,6 +1,7 @@
 ---
 title: Evaze
 date: 2022-06-07 21:14:50
+evazeapplink: true
 ---
 <div style="text-align: center;">
 <img src="/evaze/smallestname_blackbackground.png" style="width: auto; border-radius: 50px;" />
