@@ -4,7 +4,7 @@ date: 2022-06-07 21:14:50
 evazeapplink: true
 ---
 <div style="text-align: center;">
-<img src="/evaze/smallestname_blackbackground.png" style="width: auto; border-radius: 50px; max-width:100%;" />
+<img src="/evaze/evazeblacklarger.png" style="width: 400px; border-radius: 50px; max-width:100%;" />
 
 
 A fast paced puzzle-arcade mobile game, made by John Tringham
