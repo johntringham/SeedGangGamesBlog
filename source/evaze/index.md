@@ -26,6 +26,14 @@ A fast paced puzzle-arcade mobile game, made by John Tringham
 ![](evaze/screenshot(2).png)
 ![](evaze/screenshot(3).png) -->
 
+
+{%centerstart%}
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/V_kMEnoiYA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{%centerend%}
+
+<br/>
 {% raw %}
 
 <div style="text-align: center;">
@@ -45,6 +53,7 @@ Download for Android on Google Play
 
 </div>
 {% endraw %}
+
 
 <div style="text-align: center;">
 <br/>
