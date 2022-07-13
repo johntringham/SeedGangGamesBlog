@@ -1,5 +1,5 @@
 hexo.extend.tag.register('video', function(args){
-    return `<video width="100%" autoplay controls> <source src="${args[0]}" type="video/mp4"> </video>`;
+    return `<video width="100%" autoplay muted controls loop> <source src="${args[0]}" type="video/mp4"> </video>`;
   }, {async: true});
 
 hexo.extend.tag.register('html', function(args){
