@@ -1,0 +1,45 @@
+{
+  "name": "hexo-open-graph-powerful",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A Hexo plugin, Possible to generate OpenGraph <meta> tags from <YOUR ARTICLE>.md.",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "babel src/ --out-dir lib/",
+    "build": "babel src/ --out-dir lib/",
+    "fmt": "prettier-eslint --write src**/*.es6 && prettier-eslint --write test/**/*.es6",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexo",
+    "Open Graph",
+    "opengraph",
+    "twitter card"
+  ],
+  "author": "起きた浩之",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "prettier": "^1.12.1",
+    "prettier-eslint": "^8.8.1",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://acalanatha@bitbucket.org/acalanatha/hexo-open-graph-powerful.git"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  }
+}
