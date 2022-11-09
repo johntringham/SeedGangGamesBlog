@@ -31,16 +31,16 @@ The scripts were written in ActionScript 1.0, which was new in Flash 5. In my ti
 
 With just these concepts you could do a huge number of things, as long as you could mentally frame them in this 2D flipbook based system.
 
-For example, for a platformer, you could have your player be a movieclip with several running-animation frames, and some idle animation frames. You could then position it correctly using `_x` and `_y`, and use some `gotoAndPlay()` calls to make sure the player flipbook was playing correctly as they ran about, and then another `gotoAndPlay()` to show the idling animation.
+For example, for a platformer, you could have your player be a movieclip with several running-animation frames, and some idle animation frames. You could then position it correctly using `_x` and `_y`, and use some `gotoAndPlay()` calls to make sure the player flipbook was playing correctly as they ran about, and then another `gotoAndPlay()` to show the idling animation. 
 
-With this system you could remake Pacman or Mario. You could make a point-and-click adventure, or a tower defence game, or basically any game as long as:
+With this flipbook-based system you could remake Pacman or Mario. You could make a point-and-click adventure, or a tower defence game, or basically any game as long as:
 
 - It was 2D
 - Animations were pre-drawn and stored in these flipbooks
 
 Flash, as a game engine, gave you very little in way of features compared to modern day software like Unity or Godot - but at it's core the intuitiveness of the 'flipbooks-with-scripts' system was the reason it was so wildly successful at getting teenage weirdos like myself into game development. 
 
-The downside is that this flipbook system had an artistic footprint. It was the game-development equivalent of the South Park animation style. You can see the repercussions of this framework of game development in practically all flash games - in QWOP, Bloons, Madness Interactive, Alien Hominid, or countless others.
+The downside is that this flipbook system had an artistic footprint. It was the game-development equivalent of the South Park animation style. You can see the visual repercussions of this framework of game development in practically all flash games - in QWOP, Bloons, Madness Interactive, Alien Hominid, or countless others.
 
 ![](vectorpark-egg/alienhomonid.png)
 _[Alien Hominid](https://www.newgrounds.com/portal/view/59593) By Tom Fulp and Dan Paladin released 2002._
