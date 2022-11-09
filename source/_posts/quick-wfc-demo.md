@@ -30,6 +30,8 @@ Here's my version running on a regular square grid, using a basic set of "desert
 
 End result (with the background removed so it's easier to see):
 
+<!--- more -->
+
 ![](quick-wfc-demo/square-blue-background.PNG)
 
 It works well, but it's a bit boring. From looking at the end result, it's pretty obvious it was made using a grid based method, as there's a lot of straight lines and right angles. Rocks that are very far apart run parallel to one another, which isn't something that would happen in nature. Reuse of tiles is quite obvious when you look a bit closer. Everything is the exact same size. It's a fine system if you want to block out an office layout, but it doesn't really look that natural.

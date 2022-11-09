@@ -42,9 +42,19 @@
                     
                     <div class="post-date"><%- date(post.date, theme.date_format) %></div>
 
-                    <div class="post-content">
-                        <%-post.content%>
-                    </div> 
+                    <% if (post.excerpt) {%>
+                        <div class="post-excerpt">
+                            <%-post.excerpt%>
+                        </div> 
+                        <div class="post-excerpt-bottom-gradient"></div>
+                        <a class="read-more-button" href="<%- url_for(post.path) %>">Full Post</a>
+                    <% } else {%>
+                        <div class="post-content">
+                            <%-post.content%>
+                        </div> 
+                    <% } %>
+
+                    
                 </div>
         
             <% }) %>
