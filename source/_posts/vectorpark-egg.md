@@ -93,4 +93,4 @@ I still don't know how Vectorpark made egg.swf, and I don't know if I ever will 
 
 Go check out Vectorpark on [itch.io](https://vectorpark.itch.io) and on [Twitter](https://twitter.com/vectorpark/), and make sure you get [Windosill](https://vectorpark.itch.io/windosill) for Switch when it comes out on the 11th!!
 
-(also, I'm on cohost now: )
+(also, [I'm on cohost now](https://cohost.org/zappablamma) if that's something you're into)
