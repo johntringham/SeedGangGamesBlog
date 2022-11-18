@@ -12,6 +12,7 @@ logo_image:
 menu:
   Home: 
     link: http://seedganggames.com
+    #img: /icon/home.png
   Blog:
     link: /
   Archive:
