@@ -20,16 +20,16 @@ menu:
     link: http://john.seedganggames.com/
   Twitter:
     link: https://twitter.com/zappablamma
-    img: /icons/twitter.png
+    img: /icon/twitter.png
   Art:
     link: https://instagram.com/zbsketchbooks
-    img: /icons/instagram.png
+    img: /icon/instagram.png
   Cohost:
     link: https://cohost.org/zappablamma
-    img: /icons/cohostwhite.png
+    img: /icon/cohostwhite.png
   RSS:
     link: /rss2.xml
-    img: /rss.png
+    img: /icon/rss.png
 
 # stylesheets loaded in the <head>
 stylesheets:
