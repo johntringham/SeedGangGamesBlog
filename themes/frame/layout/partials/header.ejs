@@ -18,11 +18,17 @@
           <% Object.keys(theme.menu).forEach(key => { %>
             <% if (url_for(theme.menu[key]) + "index.html" == url_for(page.path)) {%>
               <li class="menu-item menu-item-active">
-                <a href="<%=url_for(theme.menu[key])%>"><%=key%></a>
+                <a href="<%=url_for(theme.menu[key].link)%>"><%=key%></a>
               </li> 
             <%} else {%>
               <li class="menu-item">
-                <a href="<%=url_for(theme.menu[key])%>"><%=key%></a>
+                <a href="<%=url_for(theme.menu[key].link)%>">
+                  <% if (theme.menu[key].img) {%>
+                    <img class="menu-img" src=<%=url_for(theme.menu[key].img)%> alt=<%=key%></img>
+                  <%} else {%>
+                    <a href="<%=url_for(theme.menu[key].link)%>"><%=key%></a>
+                  <% }%>  
+                </a>
               </li> 
             <% }%>       
           <% }); %>

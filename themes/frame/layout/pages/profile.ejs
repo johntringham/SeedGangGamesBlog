@@ -12,7 +12,7 @@
         <div class="profile-body">
             <%=theme.profile.body%>
         </div>
-        
+
         <% Object.keys(theme.profile.links).forEach(key => { %>
             <div class="profile-link">
                 <a href="<%= url_for(theme.profile.links[key])%>"><%=key%></a> 

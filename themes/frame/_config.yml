@@ -10,12 +10,26 @@ logo_image:
   image_path: /logo.png # path to your logo image
 
 menu:
-  Home: http://seedganggames.com
-  Blog: /
-  Archive: /categories/gallery/
-  Twitter: https://twitter.com/zappablamma
-  Art: https://instagram.com/zbsketchbooks
-  Portfolio: http://john.seedganggames.com/
+  Home: 
+    link: http://seedganggames.com
+  Blog:
+    link: /
+  Archive:
+    link: /categories/gallery/
+  Portfolio:
+    link: http://john.seedganggames.com/
+  Twitter:
+    link: https://twitter.com/zappablamma
+    img: /icons/twitter.png
+  Art:
+    link: https://instagram.com/zbsketchbooks
+    img: /icons/instagram.png
+  Cohost:
+    link: https://cohost.org/zappablamma
+    img: /icons/cohostwhite.png
+  RSS:
+    link: /rss2.xml
+    img: /rss.png
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -33,7 +47,7 @@ date_format: MMM D, YYYY
 # profile
 profile:
   title: hi
-  body: this is the blog for seed gang games
+  body: this is john tringham's tech blog
   image: /profile_cover.png
 
   links: []
