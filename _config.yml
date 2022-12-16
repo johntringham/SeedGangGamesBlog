@@ -30,6 +30,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 - '404.html'
+- 'mastodon.html'
 
 # Custom stuff
 twitter_card: summary_large_image
