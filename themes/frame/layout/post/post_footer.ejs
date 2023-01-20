@@ -15,17 +15,18 @@
     <nav class="post-nav">
         <div class="prev-item">
            <%if (page.prev) {%>
-                <div class="icon arrow-left"></div>
+                <div class="fake-icon"><a href="<%=url_for(page.prev.path)%>">←</a></div>
                 <div class="post-link">
-                    <a href="<%=url_for(page.prev.path)%>">Newer: <%-page.prev.title%></a>
+                    <a href="<%=url_for(page.prev.path)%>"><%-page.prev.title%></a>
                 </div>
             <%}%>
         </div>
+        <div style="width:10%"></div>
         <div class="next-item">
             <%if (page.next) {%>
-                <div class="icon arrow-right"></div>
+                <div class="fake-icon"><a href="<%=url_for(page.next.path)%>">→</a></div>
                 <div class="post-link">
-                  <a href="<%=url_for(page.next.path)%>">Older: <%-page.next.title%></a>  
+                  <a href="<%=url_for(page.next.path)%>"><%-page.next.title%></a>  
                 </div>  
             <%}%>
         </div>

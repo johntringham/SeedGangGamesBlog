@@ -1,18 +1,19 @@
 <div class="profile">
     
     <div class="post-content profile-content">
-        <div class="profile-image">
-            <% if (theme.profile.image) {%>
-                <img src="<%= url_for(theme.profile.image)%>" alt="featured_image">
-            <% } %>  
+        <div class="profile-head">
+            <div class="profile-image">
+                <% if (theme.profile.image) {%>
+                    <img src="<%= url_for(theme.profile.image)%>" alt="featured_image">
+                <% } %>  
+            </div>
+            <div class="profile-title">
+                <%=theme.profile.title%>
+            </div>
+            <div class="profile-body">
+                <%=theme.profile.body%>
+            </div>
         </div>
-        <div class="profile-title">
-            <%=theme.profile.title%>
-        </div>
-        <div class="profile-body">
-            <%=theme.profile.body%>
-        </div>
-
         <% Object.keys(theme.profile.links).forEach(key => { %>
             <div class="profile-link">
                 <a href="<%= url_for(theme.profile.links[key])%>"><%=key%></a> 

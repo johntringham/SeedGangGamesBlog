@@ -30,7 +30,7 @@ Here's my version running on a regular square grid, using a basic set of "desert
 
 End result (with the background removed so it's easier to see):
 
-<!--- more -->
+<!-- more -->
 
 ![](quick-wfc-demo/square-blue-background.PNG)
 

@@ -16,7 +16,7 @@ menu:
   Blog:
     link: /
   Archive:
-    link: /categories/gallery/
+    link: /archives/
   Portfolio:
     link: http://john.seedganggames.com/
   Twitter:
@@ -47,7 +47,7 @@ date_format: MMM D, YYYY
 
 # profile
 profile:
-  title: hi
+  title: blog
   body: this is john tringham's tech blog
   image: /profile_cover.png
 
@@ -66,7 +66,7 @@ footer:
     enable: true
     content:
 
-# color mode: default / classic / dark
+# color mode: default / classic / dark / seedgang
 color_mode: seedgang
 
 # mathjax setting
