@@ -90,7 +90,7 @@ The method I ended up with was using lerps and inverse lerps. Assuming a normali
 ![](quick-wfc-demo/skewing.png)
 
 where:
-```
+``` c
 Q = Vector3.Lerp(A, B, X);
 R = Vector3.Lerp(D, C, X);
 P` = Vector3.Lerp(R, Q, Y);
