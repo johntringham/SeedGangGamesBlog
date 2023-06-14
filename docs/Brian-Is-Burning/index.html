@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Tringham">
+
+
+
+
+
+
+
+    <meta name="description" content="I made a game this Ludum Dare with my friend Nathanial - it’s a little turn based roguelike game where you’re permanently on fire. All the feedback is really nice so far, which is cool, but we won’t k">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Brian Is Burning">
+<meta property="og:url" content="http://blog.seedganggames.com/Brian-Is-Burning/index.html">
+<meta property="og:site_name" content="Seed Gang Games Blog">
+<meta property="og:description" content="I made a game this Ludum Dare with my friend Nathanial - it’s a little turn based roguelike game where you’re permanently on fire. All the feedback is really nice so far, which is cool, but we won’t k">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://blog.seedganggames.com/Brian-Is-Burning/brianscreenshot1.png">
+<meta property="og:image" content="http://blog.seedganggames.com/Brian-Is-Burning/brianscreenshot2.png">
+<meta property="og:image" content="http://blog.seedganggames.com/Brian-Is-Burning/brianscreenshot3.png">
+<meta property="article:published_time" content="2022-04-07T13:38:46.000Z">
+<meta property="article:modified_time" content="2022-06-14T12:45:03.698Z">
+<meta property="article:author" content="John Tringham">
+<meta property="article:tag" content="game">
+<meta property="article:tag" content="ludum dare">
+<meta property="article:tag" content="unity">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://blog.seedganggames.com/Brian-Is-Burning/brianscreenshot1.png">
+<meta name="twitter:creator" content="@zappablamma">
+
+    
+<!--  -->
+
+<!--  -->
+
+
+
+<title>Brian Is Burning | Seed Gang Games Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Fredoka&family=Fredoka+One&family=Source+Code+Pro&family=Staatliches&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/frame.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Seed Gang Games Blog" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="Seed Gang Games Blog" type="application/rss+xml">
+</head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">
+          
+            Seed Gang Games Blog.
+          
+        </a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        ☰
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="http://seedganggames.com">
+                  
+                    <a href="http://seedganggames.com">Home</a>
+                    
+                </a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/">
+                  
+                    <a href="/">Blog</a>
+                    
+                </a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">
+                  
+                    <a href="/archives/">Archive</a>
+                    
+                </a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="http://john.seedganggames.com/">
+                  
+                    <a href="http://john.seedganggames.com/">Portfolio</a>
+                    
+                </a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="https://twitter.com/zappablamma">
+                  
+                    <img class="menu-img" src=/icon/twitter.png alt=Twitter</img>
+                    
+                </a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="https://instagram.com/zbsketchbooks">
+                  
+                    <img class="menu-img" src=/icon/instagram.png alt=Art</img>
+                    
+                </a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="https://cohost.org/zappablamma">
+                  
+                    <img class="menu-img" src=/icon/cohostwhite.png alt=Cohost</img>
+                    
+                </a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/rss2.xml">
+                  
+                    <img class="menu-img" src=/icon/rss.png alt=RSS</img>
+                    
+                </a>
+              </li> 
+                   
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      
+    
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="post-title">
+            
+            
+                Brian Is Burning
+            
+            
+        </div>
+        <div class="post-date">
+            Apr 7, 2022
+        </div>
+    </div>
+    <!-- <div class="post-img">
+        
+            <img src="/Brian-Is-Burning/brian.PNG" alt="featured_image">
+              
+    </div> -->
+</div>
+    <div class="post-content">
+    <p>I made <a href="https://zb.itch.io/brian-is-burning">a game</a> this Ludum Dare with my friend Nathanial - it’s a little turn based roguelike game where you’re permanently on fire.</p>
+<p>All the feedback is really nice so far, which is cool, but we won’t know the final rankings until the voting period is over, which in a couple of weeks from now.</p>
+<p>Here’s some screenshots:</p>
+<p><img src="/Brian-Is-Burning/brianscreenshot1.png"></p>
+<p><img src="/Brian-Is-Burning/brianscreenshot2.png"></p>
+<p><img src="/Brian-Is-Burning/brianscreenshot3.png"></p>
+<p>It was a Ludum Dare game, so it was made all over a weekend (saturday-monday) by the two of us. We both worked on everything at once (graphics, code, game design, etc), both working on whatever we felt like at the time, which was a bit chaotic but worked well.</p>
+<p>The game was made in Unity, and all the graphics were made using the amazing <a href="https://fernantastic.itch.io/doodle-studio-95">Doodle Studio 95</a>.</p>
+<h2 id="Go-play-it-on-itch-io"><a href="#Go-play-it-on-itch-io" class="headerlink" title="Go play it on itch.io!"></a><a href="https://zb.itch.io/brian-is-burning">Go play it on itch.io!</a></h2><p>or have a look at the <a href="https://ldjam.com/events/ludum-dare/50/brian-is-burning">Ludum Dare submission page</a> if you’re into that sort of thing.</p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="tag-list">
+        
+            
+                <span class="post-tag">
+                    <a href="/tags/game/">
+                        game
+                    </a>
+                </span>    
+            
+                <span class="post-tag">
+                    <a href="/tags/ludum-dare/">
+                        ludum dare
+                    </a>
+                </span>    
+            
+                <span class="post-tag">
+                    <a href="/tags/unity/">
+                        unity
+                    </a>
+                </span>    
+                       
+        
+    </div>
+    <div class="h-line-primary"></div>
+    
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+                <div class="fake-icon"><a href="/evaze-released/">←</a></div>
+                <div class="post-link">
+                    <a href="/evaze-released/">Evaze Released!</a>
+                </div>
+            
+        </div>
+        <div style="width:10%"></div>
+        <div class="next-item">
+            
+                <div class="fake-icon"><a href="/Slime-sim/">→</a></div>
+                <div class="post-link">
+                  <a href="/Slime-sim/">Simulating slime to do the most expensive dithering possible</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+                
+                <br>
+            
+            
+                Seed Gang Games / John Tringham |
+            
+            
+                Website powered by <a href="https://hexo.io/">Hexo</a>, <a href="https://github.com/zoeingwingkei/frame/">Frame</a>, and <a href="https://surge.sh">Surge</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+  </body>
+</html>

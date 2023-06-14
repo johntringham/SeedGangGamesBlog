@@ -1,0 +1,27 @@
+.paginator {
+  margin-top: $margin-primary;
+}
+.pagination {
+  margin-top: $margin-m-1;
+  display: flex;
+}
+.pagination:before {
+  content: "";
+  flex-grow: 1;
+}
+.page-number {
+  position: relative;
+  margin-left: $margin-m-0;
+  font-size: 10pt;
+}
+.pagination .current:after,
+.pagination .current {
+  font-size: 15pt;
+  color: $color-text-primary;
+}
+.pagination .space {
+  margin-left: $margin-m-0;
+}
+.extend {
+  margin-left: $margin-m-0;
+}

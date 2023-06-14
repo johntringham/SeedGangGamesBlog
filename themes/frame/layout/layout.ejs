@@ -11,6 +11,13 @@
 
       <%- partial('partials/header') %>
 
+      <%
+      let promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("done!"), 1000)
+      });
+      %>
+    
+
       <div class="main">
         <div class="flex-container">
           <%- body %>

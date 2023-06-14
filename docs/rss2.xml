@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Seed Gang Games Blog</title>
+    <link>http://blog.seedganggames.com/</link>
+    
+    <image>
+      <url>http://blog.seedganggames.com/icon.png</url>
+      <title>Seed Gang Games Blog</title>
+      <link>http://blog.seedganggames.com/</link>
+    </image>
+    
+    <atom:link href="http://blog.seedganggames.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Thu, 10 Nov 2022 10:35:32 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Flash, flipbooks, Vectorpark and me</title>
+      <link>http://blog.seedganggames.com/vectorpark-egg/</link>
+      <guid>http://blog.seedganggames.com/vectorpark-egg/</guid>
+      <pubDate>Sat, 05 Nov 2022 19:23:52 GMT</pubDate>
+      
+      <description>&lt;p&gt;With the news that &lt;a href=&quot;https://vectorpark.itch.io/windosill&quot;&gt;Windosill&lt;/a&gt; is &lt;a href=&quot;https://twitter.com/vectorpark/status/1588577343865774080&quot;&gt;going to be released for the Nintendo Switch&lt;/a&gt; I wanted to write a bit about Vectorpark and how much their work affected me artistically and educationally growing up.&lt;/p&gt;
+&lt;h2 id=&quot;Background-Early-Flash&quot;&gt;&lt;a href=&quot;#Background-Early-Flash&quot; class=&quot;headerlink&quot; title=&quot;Background - Early Flash&quot;&gt;&lt;/a&gt;Background - Early Flash&lt;/h2&gt;&lt;p&gt;A bit of back story: back in 2004 I was 11 years old. The company my dad worked for had gone bust and laid everyone off, and he had stolen a bunch of office supplies on his last day. Me, my brother and sister were given company branded pencils for school and had fights with company branded stress balls. We had branded mouse mats and erasers and a couple of mugs.&lt;/p&gt;
+&lt;p&gt;Even at this point I had been showing signs of being a weird computer kid, so for me the best thing he stole was a CD copy of Macromedia Flash 5.&lt;/p&gt;
+&lt;p&gt;Macromedia Flash 5 (who’s future versions would become Adobe Flash in a few years) was a perfect IDE for an 11 year old. If you’ve never made anything with early versions of Flash before, the basic premise (as my 11 year old brain understood it) was this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You’re making a flipbook, and you can add as many pages as you want&lt;/li&gt;
+&lt;li&gt;You can make movieclips, buttons and “graphics”, which were like special-purpose self-contained flipbooks that you could put in your “main” flipbook&lt;/li&gt;
+&lt;li&gt;You can add scripts to on-screen objects (or frames themselves) to get something to happen (like jumping to a different frame, or moving something on screen)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And thats about it. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/vectorpark-egg/macromediaflash5-2.png&quot;&gt;&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      
+      <comments>http://blog.seedganggames.com/vectorpark-egg/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Wave Function Collapse Algorithm for Level Generation</title>
+      <link>http://blog.seedganggames.com/quick-wfc-demo/</link>
+      <guid>http://blog.seedganggames.com/quick-wfc-demo/</guid>
+      <pubDate>Wed, 13 Jul 2022 13:04:04 GMT</pubDate>
+      
+      <description>&lt;p&gt;In the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It’s kind of like playing &lt;a href=&quot;https://www.google.com/search?q=carcassonne+game&amp;tbm=isch&quot;&gt;the board game Carcassone&lt;/a&gt;, where there’s a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven’t played it before, it looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/quick-wfc-demo/carcassonne.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The WFC algorithm very similar to just playing a round of Carcassone by yourself, but with a bit more forward planning about where you put your next tile. The basic gist is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You put a tile down in a legal spot&lt;/li&gt;
+&lt;li&gt;For each of the four neighbouring spots, you work out a list of all the possible tiles that could fit there&lt;/li&gt;
+&lt;li&gt;You then do that again for all the neighbours’ neighbours, calculating which tiles could legally go there&lt;/li&gt;
+&lt;li&gt;Once you’ve worked out all the potential different tiles for each spot in the grid, you pick the spot with the &lt;em&gt;shortest list of potential tiles&lt;/em&gt;&lt;ul&gt;
+&lt;li&gt;So if there’s a spot that can only accept &lt;em&gt;one specific type of tile&lt;/em&gt;, you’ll end up picking that one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;You then place a legal tile in that spot, and repeat the whole process over again with the remaining empty spots&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You keep doing this until the entire area is filled up (or you get a spot that can’t be filled because it requires a type of tile that doesn’t exist - but if you have a decent variety of tiles then this shouldn’t happen often).&lt;/p&gt;
+&lt;p&gt;This algorithm isn’t simple, but it isn’t too difficult either - you just need to maintain lot of lists that specify what tiles are legally allowed in each position.&lt;/p&gt;
+&lt;p&gt;Here’s my version running on a regular square grid, using a basic set of “desert rock” tiles:&lt;/p&gt;
+&lt;video width=&quot;100%&quot; autoplay muted controls loop&gt; &lt;source src=&quot;/quick-wfc-demo/squarevideo.mp4&quot; type=&quot;video/mp4&quot;&gt; &lt;/video&gt;
+
+&lt;p&gt;End result (with the background removed so it’s easier to see):&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/devlog/">devlog</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/wfc/">wfc</category>
+      
+      
+      <comments>http://blog.seedganggames.com/quick-wfc-demo/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Evaze Released!</title>
+      <link>http://blog.seedganggames.com/evaze-released/</link>
+      <guid>http://blog.seedganggames.com/evaze-released/</guid>
+      <pubDate>Fri, 01 Jul 2022 15:55:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;I’m happy to announce that I (finally) released Evaze!&lt;/p&gt;
+&lt;p&gt;Evaze was originally a Ludum Dare entry from a couple of years ago, and I</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/game/">game</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/unity/">unity</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/ios/">ios</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/android/">android</category>
+      
+      
+      <comments>http://blog.seedganggames.com/evaze-released/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Brian Is Burning</title>
+      <link>http://blog.seedganggames.com/Brian-Is-Burning/</link>
+      <guid>http://blog.seedganggames.com/Brian-Is-Burning/</guid>
+      <pubDate>Thu, 07 Apr 2022 13:38:46 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;I made &lt;a href=&quot;https://zb.itch.io/brian-is-burning&quot;&gt;a game&lt;/a&gt; this Ludum Dare with my friend Nathanial - it’s a little turn based</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/game/">game</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/ludum-dare/">ludum dare</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/unity/">unity</category>
+      
+      
+      <comments>http://blog.seedganggames.com/Brian-Is-Burning/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Simulating slime to do the most expensive dithering possible</title>
+      <link>http://blog.seedganggames.com/Slime-sim/</link>
+      <guid>http://blog.seedganggames.com/Slime-sim/</guid>
+      <pubDate>Mon, 28 Feb 2022 19:29:26 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Trudging through old projects and found my &lt;a href=&quot;https://en.wikipedia.org/wiki/Slime_mold&quot;&gt;slime-mold&lt;/a&gt; simulation and polished it</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/devlog/">devlog</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/prototype/">prototype</category>
+      
+      
+      <comments>http://blog.seedganggames.com/Slime-sim/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Old protoype - Zoo Game</title>
+      <link>http://blog.seedganggames.com/zoo/</link>
+      <guid>http://blog.seedganggames.com/zoo/</guid>
+      <pubDate>Mon, 28 Feb 2022 17:51:26 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;I’ve been digging through some old prototypes recently - here’s a video of a zoo management game I spent a few days on:&lt;/p&gt;
+&lt;iframe</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/devlog/">devlog</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/prototype/">prototype</category>
+      
+      
+      <comments>http://blog.seedganggames.com/zoo/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>New Blog</title>
+      <link>http://blog.seedganggames.com/New-Blog/</link>
+      <guid>http://blog.seedganggames.com/New-Blog/</guid>
+      <pubDate>Tue, 22 Feb 2022 15:44:25 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;I set up this blog here for tech &amp;#x2F; video game stuff. I’m using &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; which is pretty nice, and &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/blog/">blog</category>
+      
+      
+      <comments>http://blog.seedganggames.com/New-Blog/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Elephants never tumble</title>
+      <link>http://blog.seedganggames.com/Elephants-never-tumble/</link>
+      <guid>http://blog.seedganggames.com/Elephants-never-tumble/</guid>
+      <pubDate>Wed, 06 Oct 2021 18:04:25 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Here’s a dumb game I made for Ludum Dare, where you stack items ontop of an elephant balancing over a gourge.&lt;/p&gt;
+&lt;p&gt;Made in one and a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/game/">game</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/ludum-dare/">ludum dare</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/unity/">unity</category>
+      
+      
+      <comments>http://blog.seedganggames.com/Elephants-never-tumble/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Two Player</title>
+      <link>http://blog.seedganggames.com/Two-Player/</link>
+      <guid>http://blog.seedganggames.com/Two-Player/</guid>
+      <pubDate>Sun, 17 Jan 2021 20:00:21 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;I made a game for 7DFPS about the social interactions that happen when playing a couch co-op game.&lt;/p&gt;
+&lt;p&gt;You play a zombie shooter with</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/game/">game</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/unity/">unity</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/7dfps/">7dfps</category>
+      
+      
+      <comments>http://blog.seedganggames.com/Two-Player/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

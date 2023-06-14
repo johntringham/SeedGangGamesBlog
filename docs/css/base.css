@@ -1,0 +1,22 @@
+div {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: $color-text-emphasis;
+  font-weight: bold;
+}
+body {
+  background-color: $color-background;
+}
