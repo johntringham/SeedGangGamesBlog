@@ -10,9 +10,6 @@ logo_image:
   image_path: /logo.png # path to your logo image
 
 menu:
-  Home: 
-    link: http://seedganggames.com
-    #img: /icon/home.png
   Blog:
     link: /
   Archive:
