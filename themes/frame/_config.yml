@@ -25,6 +25,9 @@ menu:
   Art:
     link: https://instagram.com/zbsketchbooks
     img: /icon/instagram.png
+  Mastodon:
+    link: https://mastodon.world/@zappablamma
+    img: /icon/mastodon.svg
   Cohost:
     link: https://cohost.org/zappablamma
     img: /icon/cohostwhite.png
@@ -34,7 +37,7 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/style.css
+- css/style.css
 
 # scripts loaded in the end of the body
 scripts:
