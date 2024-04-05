@@ -3,7 +3,7 @@ title: Thumb Blocker Launcher Privacy Policy
 date: 2024-04-05 17:04:56
 ---
 
-Thumb Blocker Launcher does no tracking, telemetry or other monitoring of user activity. Thumb Blocker Launcher, does interact with Google Play Billing services in order to create/confirm purchases made in the app (such as purchasing an upgrade to Thumb Blocker Pro).
+Thumb Blocker Launcher does no tracking, telemetry or other monitoring of user activity. Thumb Blocker Launcher does interact with Google Play Billing services in order to create/confirm purchases made in the app (such as purchasing an upgrade to Thumb Blocker Pro).
 
 Google Play Billing services processes payment information and user data in order to provide their services.
 
