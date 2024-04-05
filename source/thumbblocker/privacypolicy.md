@@ -3,9 +3,11 @@ title: Thumb Blocker Launcher Privacy Policy
 date: 2024-04-05 17:04:56
 ---
 
-Thumb Blocker Launcher does no tracking, telemetry or other monitoring of user activity, other than to process Thumb Blocker Pro upgrades. This is done via the Google Play Billing services.
+Thumb Blocker Launcher does no tracking, telemetry or other monitoring of user activity. Thumb Blocker Launcher, does interact with Google Play Billing services in order to create/confirm purchases made in the app (such as purchasing an upgrade to Thumb Blocker Pro).
 
-No information about the user is sent to Seed Gang Games during day-to-day usage of the app - only during purchases, or when checking if a purchase had been made previously. During those events, the app uses Google Play Billing services to process and confirm purchases.
+Google Play Billing services processes payment information and user data in order to provide their services.
+
+No information about the user is sent to Seed Gang Games or any third party during day-to-day usage of the app - only during purchases, or when checking if a purchase had been made previously. During those events, the app uses Google Play Billing services to process and confirm purchases.
 
 Other than the data shared and processed with Google Play Billing in order to complete and confirm purchases, Thumb Blocker Launcher does not share, transmit or store any data from the user's device. 
 
