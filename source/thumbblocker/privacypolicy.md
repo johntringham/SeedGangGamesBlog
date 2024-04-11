@@ -3,7 +3,7 @@ title: Thumb Blocker Launcher Privacy Policy
 date: 2024-04-05 17:04:56
 ---
 
-Thumb Blocker Launcher uses diagnostics and telemetry to diagnose crashes and performance issues, and to analyse what features of the app are being used. These analytics are completely optional and are not shared with other third parties. Analytics and telemetry can be disabled via the in-app settings. When enabled, analytics used by Thumb Block Launcher are completely anonymous and contain no personal or distinguishing information about the user - they merely contain statistics about which features have been used. This information is not shared with a third party, and is not personally identifiable.
+Thumb Blocker Launcher uses diagnostics and telemetry to diagnose crashes, errors and performance issues, and to analyse what features of the app are being used. These analytics are completely optional and are not shared with other third parties. Analytics and telemetry can be disabled via the in-app settings. When enabled, analytics used by Thumb Block Launcher are completely anonymous and contain no personal or distinguishing information about the user - they merely contain statistics about which features have been used, and information about crashes or errors that have occurred (such as stack traces). This information is used solely to improve the app, to improve the stability of the app, and to gain insight into which features are the most useful to users. This information is not shared with a third party, and is not personally identifiable.
 
 Thumb Blocker Launcher interacts with Google Play Billing services in order to create/confirm purchases made in the app (such as purchasing an upgrade to Thumb Blocker Pro).
 
