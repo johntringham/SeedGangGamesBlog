@@ -51,7 +51,8 @@ profile:
   body: this is john tringham's tech blog
   image: /profile_cover.png
 
-  links: [https://google.com]
+  links: []
+    #test: https://cohost.org/zappablamma
 
 # footer
 footer:

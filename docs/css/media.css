@@ -27,3 +27,9 @@ html {
     width: calc(100% - 48px);
   }
 }
+img {
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.549));
+}
+video {
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.549));
+}

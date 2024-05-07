@@ -27,6 +27,12 @@ html {
     width: calc(100% - 48px);
   }
 }
+img {
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.549));
+}
+video {
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.549));
+}
 /* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15 /* 1 */;
@@ -589,7 +595,7 @@ body {
 }
 .profile .profile-content .profile-body {
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   text-align: center;
 }
 .profile .profile-content .profile-title {
@@ -630,6 +636,8 @@ body {
 .profile .profile-image {
   min-width: 100%;
   text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .profile .profile-image img {
   width: 89px;
@@ -863,6 +871,9 @@ dl dd {
 }
 .post-head .post-img {
   margin-top: 2rem;
+}
+img {
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.549));
 }
 .post-footer {
   margin-top: 3.5rem;

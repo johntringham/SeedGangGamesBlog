@@ -16,3 +16,6 @@
 .post-head .post-img {
   margin-top: $margin-l-1;
 }
+img {
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.549));
+}

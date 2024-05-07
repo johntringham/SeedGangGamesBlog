@@ -12,7 +12,7 @@
 }
 .profile .profile-content .profile-body {
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   text-align: center;
 }
 .profile .profile-content .profile-link {
@@ -32,6 +32,8 @@
 .profile .profile-image {
   min-width: 100%;
   text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .profile .profile-image img {
   width: 89px;
