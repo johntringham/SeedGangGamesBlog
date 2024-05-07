@@ -51,7 +51,7 @@ profile:
   body: this is john tringham's tech blog
   image: /profile_cover.png
 
-  links: []
+  links: [https://google.com]
 
 # footer
 footer:
