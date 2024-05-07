@@ -3,6 +3,18 @@
         <% page.posts.each(function (post) { %>
             <div class="post-gallery-item">
                 <div class="post-info">
+                    <span class="post-date">
+                        <%- date(post.date, theme.date_format) %>
+                    </span>
+                    <div class="post-title">
+                        <a href="<%=url_for(post.path)%>"</a>
+                            <% if (post.title) {%>
+                                <%= post.title %>
+                            <% } else {%>
+                                *Untitled
+                            <% } %>
+                        </a>
+                    </div>
                     <div class="tag-list">
                         <% if (post.tags && post.tags.data && post.tags.data.length > 0) {%>
                             <% post.tags.data.forEach(function(tag) { %>
@@ -14,18 +26,6 @@
                             <% }) %>           
                         <% } %>
                     </div>
-                    <div class="post-title">
-                        <a href="<%=url_for(post.path)%>"</a>
-                            <% if (post.title) {%>
-                                <%= post.title %>
-                            <% } else {%>
-                                *Untitled
-                            <% } %>
-                        </a>
-                    </div>
-                    <span class="post-date">
-                        <%- date(post.date, theme.date_format) %>
-                    </span>
                 </div>
                 <div class="post-img">
                 <% if (post.featured_image) {%>
