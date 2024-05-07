@@ -327,7 +327,6 @@ body {
 }
 .header-inner .site-nav {
   flex-grow: 1;
-  overflow-x: auto;
 }
 .menu-list {
   text-align: right;
@@ -480,7 +479,7 @@ body {
 .post-gallery-item {
   display: flex;
   margin-top: 3.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 3.5rem;
 }
 .post-gallery-item .post-info {
   margin-right: 1.5rem;
@@ -1141,6 +1140,12 @@ hr {
   background-color: #838383;
   height: 1px;
   border: 0;
+}
+.post-gallery-item .tag-list {
+  display: block;
+  flex-wrap: 0;
+  text-align: center;
+  margin-bottom: 0;
 }
 .tag-list {
   display: flex;

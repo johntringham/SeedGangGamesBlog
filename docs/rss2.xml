@@ -15,8 +15,45 @@
     <atom:link href="http://blog.seedganggames.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 10 Nov 2022 10:35:32 GMT</pubDate>
+    <pubDate>Tue, 07 May 2024 14:26:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Prototype Debrief - Counter-Strike 2D Demo Viewer</title>
+      <link>http://blog.seedganggames.com/Counter-Strike-2D-Viewer/</link>
+      <guid>http://blog.seedganggames.com/Counter-Strike-2D-Viewer/</guid>
+      <pubDate>Mon, 06 May 2024 16:39:51 GMT</pubDate>
+      
+      <description>&lt;p&gt;Counter-Strike is a fun game. Over lockdown, I got into the E-Sports side of things, and eventually I made an in-browser 2D replay viewer as a little personal project back in the summer of 2023. I remembered it recently and wanted to write a blogpost about it.&lt;/p&gt;
+&lt;video width=&quot;100%&quot; autoplay muted controls loop&gt; &lt;source src=&quot;/Counter-Strike-2D-Viewer/cs2demoviewer4.mp4&quot; type=&quot;video/mp4&quot;&gt; &lt;/video&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Footage of the demo viewer showing a few rounds of &lt;a href=&quot;https://www.youtube.com/watch?v=Dtsryf3Y3js&amp;t=20571s&quot;&gt;Into The Breach Vs Vitality on Vertigo&lt;/a&gt;, played at double speed. Design wise, it’s one of the ugliest websites I’ve made, but as a prototype I’m happy with it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Preamble-What’s-Counter-Strike&quot;&gt;&lt;a href=&quot;#Preamble-What’s-Counter-Strike&quot; class=&quot;headerlink&quot; title=&quot;Preamble: What’s Counter-Strike?&quot;&gt;&lt;/a&gt;Preamble: What’s Counter-Strike?&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Counter Strike&lt;/em&gt; was originally released in 1998 as a Half-Life mod. The latest version of it, &lt;em&gt;Counter-Strike 2&lt;/em&gt; (which, surprisingly, is the fifth CS game), was released in 2023, and it’s now the most played game on Steam. Most days, there’s a point during the day where about &lt;a href=&quot;https://steamcharts.com/app/730&quot;&gt;1.4 million people are playing it at the same time&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you don’t know anything about CS, the basic rules of the game are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are two teams, each with 5 players: the T side and the CT side&lt;/li&gt;
+&lt;li&gt;Each round, the T side wants to get to one of the two bombsites and plant the bomb within the time limit (about 2 minutes). Once the bomb is planted, it takes 40 seconds until the bomb explodes. T’s want the bomb to explode.&lt;/li&gt;
+&lt;li&gt;CT side wants to stop the T’s from planting the bomb, or to diffuse the bomb once its planted</description>
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/devlog/">devlog</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/prototype/">prototype</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/web/">web</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/go/">go</category>
+      
+      
+      <comments>http://blog.seedganggames.com/Counter-Strike-2D-Viewer/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Flash, flipbooks, Vectorpark and me</title>

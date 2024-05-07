@@ -12,7 +12,6 @@
 }
 .header-inner .site-nav {
   flex-grow: 1;
-  overflow-x: auto;
 }
 .menu-list {
   text-align: right;
