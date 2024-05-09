@@ -6,7 +6,7 @@
   <link href="http://blog.seedganggames.com/atom.xml" rel="self"/>
   
   <link href="http://blog.seedganggames.com/"/>
-  <updated>2024-05-07T14:26:27.291Z</updated>
+  <updated>2024-05-09T16:03:10.507Z</updated>
   <id>http://blog.seedganggames.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flowgrammer</title>
+    <link href="http://blog.seedganggames.com/flowgrammer/"/>
+    <id>http://blog.seedganggames.com/flowgrammer/</id>
+    <published>2024-05-09T15:27:40.000Z</published>
+    <updated>2024-05-09T16:03:10.507Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Last month I started a little project called Flowgrammer. It’s a prototype visual scripting language aimed at teaching children and adults programming concepts.&lt;/p&gt;
+&lt;video width=&quot;100%&quot; autoplay muted controls loop&gt; &lt;source src=&quot;/flowgrammer/count.mp4&quot; type=&quot;video/mp4&quot;&gt; &lt;/video&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Video demonstrating how blocks and value wires work&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Drag and drop scripting “blocks” and connect them together to create small procedures and methods.&lt;/p&gt;
+&lt;p&gt;It’s connected to a small 2D physics engine (using &lt;a href=&quot;https://brm.io/matter-js/&quot;&gt;matter.js&lt;/a&gt;), which users can control via the scripts they build.&lt;/p&gt;
+&lt;p&gt;I made Flowgrammer entirely over the course of 12 days in April 2024 using node, typescript, riot.js and webpack.&lt;/p&gt;
+&lt;p&gt;Here’s a couple of other demos:&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="gallery" scheme="http://blog.seedganggames.com/categories/gallery/"/>
+    
+    
+    <category term="devlog" scheme="http://blog.seedganggames.com/tags/devlog/"/>
+    
+    <category term="web" scheme="http://blog.seedganggames.com/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>Prototype Debrief - Counter-Strike 2D Demo Viewer</title>
@@ -56,7 +85,7 @@
     <link href="http://blog.seedganggames.com/vectorpark-egg/"/>
     <id>http://blog.seedganggames.com/vectorpark-egg/</id>
     <published>2022-11-05T19:23:52.000Z</published>
-    <updated>2022-11-10T10:35:32.354Z</updated>
+    <updated>2024-05-09T16:06:41.357Z</updated>
     
     
     <summary type="html">&lt;p&gt;With the news that &lt;a href=&quot;https://vectorpark.itch.io/windosill&quot;&gt;Windosill&lt;/a&gt; is &lt;a href=&quot;https://twitter.com/vectorpark/status/1588577343865774080&quot;&gt;going to be released for the Nintendo Switch&lt;/a&gt; I wanted to write a bit about Vectorpark and how much their work affected me artistically and educationally growing up.&lt;/p&gt;
@@ -75,6 +104,10 @@
     
     <category term="gallery" scheme="http://blog.seedganggames.com/categories/gallery/"/>
     
+    
+    <category term="blog" scheme="http://blog.seedganggames.com/tags/blog/"/>
+    
+    <category term="ramble" scheme="http://blog.seedganggames.com/tags/ramble/"/>
     
   </entry>
   

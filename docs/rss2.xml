@@ -15,8 +15,39 @@
     <atom:link href="http://blog.seedganggames.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 07 May 2024 14:26:27 GMT</pubDate>
+    <pubDate>Thu, 09 May 2024 16:03:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>flowgrammer</title>
+      <link>http://blog.seedganggames.com/flowgrammer/</link>
+      <guid>http://blog.seedganggames.com/flowgrammer/</guid>
+      <pubDate>Thu, 09 May 2024 15:27:40 GMT</pubDate>
+      
+      <description>&lt;p&gt;Last month I started a little project called Flowgrammer. It’s a prototype visual scripting language aimed at teaching children and adults programming concepts.&lt;/p&gt;
+&lt;video width=&quot;100%&quot; autoplay muted controls loop&gt; &lt;source src=&quot;/flowgrammer/count.mp4&quot; type=&quot;video/mp4&quot;&gt; &lt;/video&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Video demonstrating how blocks and value wires work&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Drag and drop scripting “blocks” and connect them together to create small procedures and methods.&lt;/p&gt;
+&lt;p&gt;It’s connected to a small 2D physics engine (using &lt;a href=&quot;https://brm.io/matter-js/&quot;&gt;matter.js&lt;/a&gt;), which users can control via the scripts they build.&lt;/p&gt;
+&lt;p&gt;I made Flowgrammer entirely over the course of 12 days in April 2024 using node, typescript, riot.js and webpack.&lt;/p&gt;
+&lt;p&gt;Here’s a couple of other demos:&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
+      
+      
+      <category domain="http://blog.seedganggames.com/tags/devlog/">devlog</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/web/">web</category>
+      
+      
+      <comments>http://blog.seedganggames.com/flowgrammer/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Prototype Debrief - Counter-Strike 2D Demo Viewer</title>
@@ -78,6 +109,10 @@
       
       <category domain="http://blog.seedganggames.com/categories/gallery/">gallery</category>
       
+      
+      <category domain="http://blog.seedganggames.com/tags/blog/">blog</category>
+      
+      <category domain="http://blog.seedganggames.com/tags/ramble/">ramble</category>
       
       
       <comments>http://blog.seedganggames.com/vectorpark-egg/#disqus_thread</comments>
