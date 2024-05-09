@@ -2,9 +2,9 @@
 title: Flash, flipbooks, Vectorpark and me
 categories:
   - - gallery
-featured_image: /New-Blog/default-featured-image.png
+featured_image: /vectorpark-egg/train.png
 date: 2022-11-05 19:23:52
-tags:
+tags: [blog, ramble]
 ---
 
 With the news that [Windosill](https://vectorpark.itch.io/windosill) is [going to be released for the Nintendo Switch](https://twitter.com/vectorpark/status/1588577343865774080) I wanted to write a bit about Vectorpark and how much their work affected me artistically and educationally growing up.
