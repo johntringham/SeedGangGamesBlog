@@ -1,5 +1,5 @@
 ---
-title: flowgrammer
+title: Flowgrammer
 categories:
   - - gallery
 featured_image: /flowgrammer/thumb.png
