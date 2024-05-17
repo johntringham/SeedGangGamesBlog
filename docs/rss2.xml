@@ -125,9 +125,9 @@
       <guid>http://blog.seedganggames.com/quick-wfc-demo/</guid>
       <pubDate>Wed, 13 Jul 2022 13:04:04 GMT</pubDate>
       
-      <description>&lt;p&gt;In the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It’s kind of like playing &lt;a href=&quot;https://www.google.com/search?q=carcassonne+game&amp;tbm=isch&quot;&gt;the board game Carcassone&lt;/a&gt;, where there’s a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven’t played it before, it looks like this:&lt;/p&gt;
+      <description>&lt;p&gt;Over the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It’s kind of like playing &lt;a href=&quot;https://www.google.com/search?q=carcassonne+game&amp;tbm=isch&quot;&gt;the board game Carcassone&lt;/a&gt;, where there’s a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven’t played it before, it looks like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/quick-wfc-demo/carcassonne.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;The WFC algorithm very similar to just playing a round of Carcassone by yourself, but with a bit more forward planning about where you put your next tile. The basic gist is:&lt;/p&gt;
+&lt;p&gt;The WFC algorithm is very similar to just playing a round of Carcassone by yourself, but with a bit more forward planning about where you put your next tile. The basic gist is:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You put a tile down in a legal spot&lt;/li&gt;
 &lt;li&gt;For each of the four neighbouring spots, you work out a list of all the possible tiles that could fit there&lt;/li&gt;

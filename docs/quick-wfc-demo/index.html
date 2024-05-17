@@ -14,19 +14,19 @@
 
 
 
-    <meta name="description" content="In the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit togeth">
+    <meta name="description" content="Over the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit toge">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Wave Function Collapse Algorithm for Level Generation">
 <meta property="og:url" content="http://blog.seedganggames.com/quick-wfc-demo/index.html">
 <meta property="og:site_name" content="Seed Gang Games Blog">
-<meta property="og:description" content="In the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit togeth">
+<meta property="og:description" content="Over the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit toge">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://blog.seedganggames.com/quick-wfc-demo/carcassonne.jpg">
 <meta property="og:image" content="http://blog.seedganggames.com/quick-wfc-demo/square-blue-background.PNG">
 <meta property="og:image" content="http://blog.seedganggames.com/quick-wfc-demo/cover.png">
 <meta property="og:image" content="http://blog.seedganggames.com/quick-wfc-demo/skewing.png">
 <meta property="article:published_time" content="2022-07-13T13:04:04.000Z">
-<meta property="article:modified_time" content="2023-06-14T07:30:47.253Z">
+<meta property="article:modified_time" content="2024-05-17T11:03:47.607Z">
 <meta property="article:author" content="John Tringham">
 <meta property="article:tag" content="devlog">
 <meta property="article:tag" content="wfc">
@@ -105,9 +105,9 @@
           
             
               <li class="menu-item">
-                <a href="/">
+                <a rel="me" href="/">
                   
-                    <a href="/">Blog</a>
+                    Blog
                     
                 </a>
               </li> 
@@ -115,9 +115,9 @@
           
             
               <li class="menu-item">
-                <a href="/archives/">
+                <a rel="me" href="/archives/">
                   
-                    <a href="/archives/">Archive</a>
+                    Archive
                     
                 </a>
               </li> 
@@ -125,9 +125,9 @@
           
             
               <li class="menu-item">
-                <a href="http://john.seedganggames.com/">
+                <a rel="me" href="http://john.seedganggames.com/">
                   
-                    <a href="http://john.seedganggames.com/">Portfolio</a>
+                    Portfolio
                     
                 </a>
               </li> 
@@ -135,7 +135,7 @@
           
             
               <li class="menu-item">
-                <a href="https://twitter.com/zappablamma">
+                <a rel="me" href="https://twitter.com/zappablamma">
                   
                     <img class="menu-img" src=/icon/twitter.png alt=Twitter</img>
                     
@@ -145,7 +145,7 @@
           
             
               <li class="menu-item">
-                <a href="https://instagram.com/zbsketchbooks">
+                <a rel="me" href="https://instagram.com/zbsketchbooks">
                   
                     <img class="menu-img" src=/icon/instagram.png alt=Art</img>
                     
@@ -155,7 +155,7 @@
           
             
               <li class="menu-item">
-                <a href="https://mastodon.world/@zappablamma">
+                <a rel="me" href="https://mastodon.world/@zappablamma">
                   
                     <img class="menu-img" src=/icon/mastodon.svg alt=Mastodon</img>
                     
@@ -165,7 +165,7 @@
           
             
               <li class="menu-item">
-                <a href="https://cohost.org/zappablamma">
+                <a rel="me" href="https://cohost.org/zappablamma">
                   
                     <img class="menu-img" src=/icon/cohostwhite.png alt=Cohost</img>
                     
@@ -175,7 +175,7 @@
           
             
               <li class="menu-item">
-                <a href="/rss2.xml">
+                <a rel="me" href="/rss2.xml">
                   
                     <img class="menu-img" src=/icon/rss.png alt=RSS</img>
                     
@@ -218,9 +218,9 @@
     </div> -->
 </div>
     <div class="post-content">
-    <p>In the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It’s kind of like playing <a href="https://www.google.com/search?q=carcassonne+game&tbm=isch">the board game Carcassone</a>, where there’s a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven’t played it before, it looks like this:</p>
+    <p>Over the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It’s kind of like playing <a href="https://www.google.com/search?q=carcassonne+game&tbm=isch">the board game Carcassone</a>, where there’s a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven’t played it before, it looks like this:</p>
 <p><img src="/quick-wfc-demo/carcassonne.jpg"></p>
-<p>The WFC algorithm very similar to just playing a round of Carcassone by yourself, but with a bit more forward planning about where you put your next tile. The basic gist is:</p>
+<p>The WFC algorithm is very similar to just playing a round of Carcassone by yourself, but with a bit more forward planning about where you put your next tile. The basic gist is:</p>
 <ul>
 <li>You put a tile down in a legal spot</li>
 <li>For each of the four neighbouring spots, you work out a list of all the possible tiles that could fit there</li>

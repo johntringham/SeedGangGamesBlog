@@ -7,11 +7,11 @@ date: 2022-07-13 14:04:04
 tags: [devlog, wfc]
 ---
 
-In the last couple of months I've been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It's kind of like playing [the board game Carcassone](https://www.google.com/search?q=carcassonne+game&tbm=isch), where there's a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven't played it before, it looks like this:
+Over the last couple of months I've been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It's kind of like playing [the board game Carcassone](https://www.google.com/search?q=carcassonne+game&tbm=isch), where there's a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven't played it before, it looks like this:
 
 ![](quick-wfc-demo/carcassonne.jpg)
 
-The WFC algorithm very similar to just playing a round of Carcassone by yourself, but with a bit more forward planning about where you put your next tile. The basic gist is:
+The WFC algorithm is very similar to just playing a round of Carcassone by yourself, but with a bit more forward planning about where you put your next tile. The basic gist is:
 
 - You put a tile down in a legal spot
 - For each of the four neighbouring spots, you work out a list of all the possible tiles that could fit there
