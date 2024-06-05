@@ -6,7 +6,7 @@
   <link href="http://blog.seedganggames.com/atom.xml" rel="self"/>
   
   <link href="http://blog.seedganggames.com/"/>
-  <updated>2024-05-17T11:09:42.862Z</updated>
+  <updated>2024-06-05T19:22:42.408Z</updated>
   <id>http://blog.seedganggames.com/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MuuRadio</title>
+    <link href="http://blog.seedganggames.com/muuradio/"/>
+    <id>http://blog.seedganggames.com/muuradio/</id>
+    <published>2024-06-05T17:55:05.000Z</published>
+    <updated>2024-06-05T19:22:42.408Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://muuradio.com/&quot;&gt;MuuRadio&lt;/a&gt; is a chat room website, where participants can upload their MP3’s, and everyone listens to them at the same time. It’s all peer-to-peer, including the messages themselves, and so no messages or MP3 data is sent to a central server - just between the users in that particular room only.&lt;/p&gt;
+&lt;p&gt;Here’s a demo of it working on both desktop and mobile, showing a couple of friends* enjoying some public-domain music:&lt;/p&gt;
+&lt;div style=&#39;text-align: center;&#39;&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;515&quot; src=&quot;https://www.youtube-nocookie.com/embed/jPab2SDdgg0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;MuuRadio started as “Musync”, back in 2019. I’ve worked on it in short bursts since then as a side project I knew wouldn’t make any money, and eventually, due to &lt;a href=&quot;https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq&quot;&gt;Heroku killing off their free plan&lt;/a&gt; and being generally useless, and me not having enough time to fix it, it went into disrepair. I wanted to include MuuRadio in &lt;a href=&quot;https://john.seedganggames.com/&quot;&gt;my portfolio site&lt;/a&gt;, so I’ve finally gotten around to giving it a bit of love and care.&lt;/p&gt;
+&lt;p&gt;MuuRadio was the first big project I made using TypeScript - and I honestly loved it straight away. I &lt;em&gt;originally&lt;/em&gt; started MuuRadio in vanilla javascript, and having been used to the type safety of C# for so long, it quickly drove me mad. Converting to typescript early on was the best decision I ever made. I still made some mistakes however - the website depends on calling the tsc compiler directly, rather than using something like webpack - an oversight that caused some annoyances down the road that I’m just putting up with for now.&lt;/p&gt;
+&lt;p&gt;MuuRadio uses WebRTC to communicate in a peer-to-peer system, using &lt;a href=&quot;https://peerjs.com/&quot;&gt;peer.js&lt;/a&gt; - which is a great and straightforward library. &lt;/p&gt;
+&lt;p&gt;The general system works like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;em&gt;host&lt;/em&gt; sets up a new room&lt;/li&gt;
+&lt;li&gt;Other users can connect to a room by providing the hosts name&lt;/li&gt;
+&lt;li&gt;All users (including the host) are allocated a random name - a combination of adjective and animal (eg. “lazy stout” or “energetic flamingo”, etc)</summary>
+    
+    
+    
+    <category term="gallery" scheme="http://blog.seedganggames.com/categories/gallery/"/>
+    
+    
+    <category term="devlog" scheme="http://blog.seedganggames.com/tags/devlog/"/>
+    
+    <category term="web" scheme="http://blog.seedganggames.com/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>Flowgrammer</title>

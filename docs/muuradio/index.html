@@ -14,12 +14,18 @@
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Seed Gang Games Blog">
-<meta property="og:url" content="http://blog.seedganggames.com/index.html">
+    <meta name="description" content="I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised. MuuRadio is a chat room website, where participants can upload th">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MuuRadio">
+<meta property="og:url" content="http://blog.seedganggames.com/muuradio/index.html">
 <meta property="og:site_name" content="Seed Gang Games Blog">
+<meta property="og:description" content="I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised. MuuRadio is a chat room website, where participants can upload th">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-06-05T17:55:05.000Z">
+<meta property="article:modified_time" content="2024-06-05T19:22:42.408Z">
 <meta property="article:author" content="John Tringham">
+<meta property="article:tag" content="devlog">
+<meta property="article:tag" content="web">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@zappablamma">
 
@@ -30,7 +36,7 @@
 
 
 
-<title>Seed Gang Games Blog</title>
+<title>MuuRadio | Seed Gang Games Blog</title>
 
 
 
@@ -184,61 +190,30 @@
 
       <div class="main">
         <div class="flex-container">
-          <div class="profile">
-    
-    <div class="post-content profile-content">
-        <div class="profile-head">
+          <article id="post">
 
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="post-title">
             
-
-            <div class="profile-title">
-                blog
-            </div>
-
             
-            <!-- <div class="profile-text"> -->
-                <div class="profile-body">
-                    this is john tringham&#39;s tech blog
-                </div>
-            <!-- </div> -->
-
-            <div class="profile-image">
-                
-                    <img src="/profile_cover.png" alt="featured_image">
-                  
-            </div>
-
-            <div class="profile-body">
-                <a href="/archives/">all posts</a> | <a href="/">latest posts</a> | <a href="/rss2.xml">rss</a>
-            </div>
+                MuuRadio
+            
+            
         </div>
-
+        <div class="post-date">
+            Jun 5, 2024
+        </div>
+    </div>
+    <!-- <div class="post-img">
         
-
-        <div class="post-list">
-            <!--  -->
-            
-        
-                <!-- 
-        
-                
-                    <div class="year-title">2024</div>
-                 -->
-        
-                <div class="main-page-post-list-item">
-                    <div class="post-title">
-                    <a href="/muuradio/">
-                        
-                            MuuRadio
-                        
-                        </a> 
-                    </div>
-                    
-                    <div class="post-date">Jun 5, 2024</div>
-
-                    
-                        <div class="post-excerpt">
-                            <p>I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised.</p>
+            <img src="/muuradio/muudude.png" alt="featured_image">
+              
+    </div> -->
+</div>
+    <div class="post-content">
+    <p>I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised.</p>
 <p><a href="https://muuradio.com/">MuuRadio</a> is a chat room website, where participants can upload their MP3’s, and everyone listens to them at the same time. It’s all peer-to-peer, including the messages themselves, and so no messages or MP3 data is sent to a central server - just between the users in that particular room only.</p>
 <p>Here’s a demo of it working on both desktop and mobile, showing a couple of friends* enjoying some public-domain music:</p>
 <div style='text-align: center;'>
@@ -254,106 +229,82 @@
 <ul>
 <li>A <em>host</em> sets up a new room</li>
 <li>Other users can connect to a room by providing the hosts name</li>
-<li>All users (including the host) are allocated a random name - a combination of adjective and animal (eg. “lazy stout” or “energetic flamingo”, etc)
-                        </div> 
-                        <div class="post-excerpt-bottom-gradient"></div>
-                        <a class="read-more-button" href="/muuradio/">Full Post</a>
-                    
+<li>All users (including the host) are allocated a random name - a combination of adjective and animal (eg. “lazy stout” or “energetic flamingo”, etc)<span id="more"></span></li>
+<li>Each user connects directly to the host (and only the host), via peer.js</li>
+<li>Messages are sent to the host, who then relays this information to everyone else in the room</li>
+<li>Music files are sent as on-the-fly <a href="https://en.wikipedia.org/wiki/Magnet_URI_scheme">torrent magnets</a>, using <a href="https://webtorrent.io/docs">webtorrent</a>. Only the magnet string (only about 500 ascii characters in length) is sent to the host</li>
+<li>When users, including the host, receive a magnet link, they start downloading the MP3 files from the rest of the users, using webtorrent</li>
+<li>Because this is done using on-the-fly torrents, other users seed the MP3 file to each other - every user in the chat is simultaneously downloading <em>and</em> uploading the file to everyone else in the room - making downloads fast, robust, and not dependant on a central server. The more users there are, the faster the downloads are for everyone.</li>
+<li>Once the MP3 files are downloaded:<ul>
+<li>The headers are checked to see if it’s <em>actually</em> an MP3 file</li>
+<li>The ID3 tags are read to identify the song name, the album title, the artist, etc</li>
+<li>The album art is found using a <a href="https://www.last.fm/api">Last.fm API</a> call</li>
+</ul>
+</li>
+<li>Tracks are arranged into a first-come-first-served queue</li>
+<li>The host instance of the webapp dictates what is playing and when. Tracks are synchronised with everyone, so the host needs to indicate what MP3 is currently playing, and what time exactly it started - this way other people joining will be listening at the same time, even if they join halfway through a track.</li>
+</ul>
+<p>That’s the big-picture gist of it.</p>
+<p>There’s a lot of extra stuff going on under-the-hood to get things working correctly. I set up a basic UTC timestamp webservice, so that timezones or incorrectly-set device times don’t interfere with the syncing logic, and another basic webservice to broker the last.fm cover-art API call, so not to expose my API key. I originally was hosting a dedicated peer.js server instance using Heroku, but they kept borking the SSL setup and then turned off the free-plan entirely, so I just went back to the public peer.js server instead, which hasn’t caused me any real issues.</p>
+<p>There’s a lot of weird edge case logic that get a little hairy (what if track one ends, but some people haven’t downloaded track 2 yet? what if a user sends through a magnet link, but leaves before any other user has been able to download the whole file?), but most of them are sorted (the ones I’m aware of, anyway).</p>
+<p>Originally it was hosted using <a href="">surge.sh</a>, which is great for static-sites - which worked great, but couldn’t do any of the webservices I wanted. So I moved over to Heroku, which worked, but overall I had a pretty shitty time, due to having problems getting their SSL system to work correctly. Then recently I moved everything over to <a href="https://pages.cloudflare.com/">Cloudflare Pages</a>&#x2F;<a href="https://workers.cloudflare.com/">Workers</a>, which (so far) is a lot nicer. CF’s CLI&#x2F;toolset <a href="https://developers.cloudflare.com/workers/wrangler/">Wrangler</a> is slightly different from node.js, but it was easy enough to sort out - the overall move from heroku to CF took a few hours, including research time. They are offering it for a reasonable price (free), and it seems to fit exactly what I need, so no complaints from me.</p>
+<p>As always, there’s more work that can be done, and bugs that can be fixed - but for now it’s in pretty good shape.</p>
+<p>* By <em>“friends”</em> I mean <em>“just me with multiple tabs talking to myself”</em></p>
 
-                    
-                </div>
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="tag-list">
         
             
-        
-                <!-- 
-        
-                 -->
-        
-                <div class="main-page-post-list-item">
-                    <div class="post-title">
-                    <a href="/flowgrammer/">
-                        
-                            Flowgrammer
-                        
-                        </a> 
-                    </div>
-                    
-                    <div class="post-date">May 9, 2024</div>
-
-                    
-                        <div class="post-excerpt">
-                            <p>Last month I started a little project called Flowgrammer. It’s a prototype visual scripting language aimed at teaching children and adults programming concepts.</p>
-<video width="100%" autoplay muted controls loop> <source src="/flowgrammer/count.mp4" type="video/mp4"> </video>
-<blockquote>
-<p>Video demonstrating how blocks and value wires work</p>
-</blockquote>
-<p>Drag and drop scripting “blocks” and connect them together to create small procedures and methods.</p>
-<p>It’s connected to a small 2D physics engine (using <a href="https://brm.io/matter-js/">matter.js</a>), which users can control via the scripts they build.</p>
-<p>I made Flowgrammer entirely over the course of 12 days in April 2024 using node, typescript, riot.js and webpack.</p>
-<p>Here’s a couple of other demos:</p>
-                        </div> 
-                        <div class="post-excerpt-bottom-gradient"></div>
-                        <a class="read-more-button" href="/flowgrammer/">Full Post</a>
-                    
-
-                    
-                </div>
-        
+                <span class="post-tag">
+                    <a href="/tags/devlog/">
+                        devlog
+                    </a>
+                </span>    
             
+                <span class="post-tag">
+                    <a href="/tags/web/">
+                        web
+                    </a>
+                </span>    
+                       
         
-                <!-- 
-        
-                 -->
-        
-                <div class="main-page-post-list-item">
-                    <div class="post-title">
-                    <a href="/Counter-Strike-2D-Viewer/">
-                        
-                            Prototype Debrief - Counter-Strike 2D Demo Viewer
-                        
-                        </a> 
-                    </div>
-                    
-                    <div class="post-date">May 6, 2024</div>
-
-                    
-                        <div class="post-excerpt">
-                            <p>Counter-Strike is a fun game. Over lockdown, I got into the E-Sports side of things, and eventually I made an in-browser 2D replay viewer as a little personal project back in the summer of 2023. I remembered it recently and wanted to write a blogpost about it.</p>
-<video width="100%" autoplay muted controls loop> <source src="/Counter-Strike-2D-Viewer/cs2demoviewer4.mp4" type="video/mp4"> </video>
-<blockquote>
-<p>Footage of the demo viewer showing a few rounds of <a href="https://www.youtube.com/watch?v=Dtsryf3Y3js&t=20571s">Into The Breach Vs Vitality on Vertigo</a>, played at double speed. Design wise, it’s one of the ugliest websites I’ve made, but as a prototype I’m happy with it.</p>
-</blockquote>
-<h2 id="Preamble-What’s-Counter-Strike"><a href="#Preamble-What’s-Counter-Strike" class="headerlink" title="Preamble: What’s Counter-Strike?"></a>Preamble: What’s Counter-Strike?</h2><p><em>Counter Strike</em> was originally released in 1998 as a Half-Life mod. The latest version of it, <em>Counter-Strike 2</em> (which, surprisingly, is the fifth CS game), was released in 2023, and it’s now the most played game on Steam. Most days, there’s a point during the day where about <a href="https://steamcharts.com/app/730">1.4 million people are playing it at the same time</a>.</p>
-<p>If you don’t know anything about CS, the basic rules of the game are:</p>
-<ul>
-<li>There are two teams, each with 5 players: the T side and the CT side</li>
-<li>Each round, the T side wants to get to one of the two bombsites and plant the bomb within the time limit (about 2 minutes). Once the bomb is planted, it takes 40 seconds until the bomb explodes. T’s want the bomb to explode.</li>
-<li>CT side wants to stop the T’s from planting the bomb, or to diffuse the bomb once its planted
-                        </div> 
-                        <div class="post-excerpt-bottom-gradient"></div>
-                        <a class="read-more-button" href="/Counter-Strike-2D-Viewer/">Full Post</a>
-                    
-
-                    
-                </div>
-        
-            
-
-            <div id="paginator">
-                
-    <div class=paginator>
-        <div class="h-line-primary"></div>
-        <nav class="pagination">
-            <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next →</a>
-        </nav>
     </div>
-
-            </div>
-        </div>
-
-    </div>
+    <div class="h-line-primary"></div>
     
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div style="width:10%"></div>
+        <div class="next-item">
+            
+                <div class="fake-icon"><a href="/flowgrammer/">→</a></div>
+                <div class="post-link">
+                  <a href="/flowgrammer/">Flowgrammer</a>  
+                </div>  
+            
+        </div>
+    </nav>
 </div>
+
+    
+      <div class="post-comment">
+
+     
+
+     
+    
+    
+
+</div>
+     
+  
+</article>
         </div>
       </div>
       
