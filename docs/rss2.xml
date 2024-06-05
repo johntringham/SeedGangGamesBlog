@@ -15,7 +15,7 @@
     <atom:link href="http://blog.seedganggames.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 05 Jun 2024 19:22:42 GMT</pubDate>
+    <pubDate>Wed, 05 Jun 2024 21:10:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -26,6 +26,7 @@
       
       <description>&lt;p&gt;I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://muuradio.com/&quot;&gt;MuuRadio&lt;/a&gt; is a chat room website, where participants can upload their MP3’s, and everyone listens to them at the same time. It’s all peer-to-peer, including the messages themselves, and so no messages or MP3 data is sent to a central server - just between the users in that particular room only.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/muuradio/kb4.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Here’s a demo of it working on both desktop and mobile, showing a couple of friends* enjoying some public-domain music:&lt;/p&gt;
 &lt;div style=&#39;text-align: center;&#39;&gt;
 

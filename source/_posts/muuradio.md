@@ -11,6 +11,8 @@ I've been trying to do more writeups of past projects recently - here's one that
 
 [MuuRadio](https://muuradio.com) is a chat room website, where participants can upload their MP3's, and everyone listens to them at the same time. It's all peer-to-peer, including the messages themselves, and so no messages or MP3 data is sent to a central server - just between the users in that particular room only.
 
+![](/muuradio/kb4.png)
+
 Here's a demo of it working on both desktop and mobile, showing a couple of friends* enjoying some public-domain music:
 
 {%centerstart%}

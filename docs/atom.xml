@@ -6,7 +6,7 @@
   <link href="http://blog.seedganggames.com/atom.xml" rel="self"/>
   
   <link href="http://blog.seedganggames.com/"/>
-  <updated>2024-06-05T19:22:42.408Z</updated>
+  <updated>2024-06-05T21:10:49.803Z</updated>
   <id>http://blog.seedganggames.com/</id>
   
   <author>
@@ -21,11 +21,12 @@
     <link href="http://blog.seedganggames.com/muuradio/"/>
     <id>http://blog.seedganggames.com/muuradio/</id>
     <published>2024-06-05T17:55:05.000Z</published>
-    <updated>2024-06-05T19:22:42.408Z</updated>
+    <updated>2024-06-05T21:10:49.803Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://muuradio.com/&quot;&gt;MuuRadio&lt;/a&gt; is a chat room website, where participants can upload their MP3’s, and everyone listens to them at the same time. It’s all peer-to-peer, including the messages themselves, and so no messages or MP3 data is sent to a central server - just between the users in that particular room only.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/muuradio/kb4.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Here’s a demo of it working on both desktop and mobile, showing a couple of friends* enjoying some public-domain music:&lt;/p&gt;
 &lt;div style=&#39;text-align: center;&#39;&gt;
 
