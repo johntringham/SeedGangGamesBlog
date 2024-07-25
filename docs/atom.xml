@@ -6,7 +6,7 @@
   <link href="http://blog.seedganggames.com/atom.xml" rel="self"/>
   
   <link href="http://blog.seedganggames.com/"/>
-  <updated>2024-06-05T21:10:49.803Z</updated>
+  <updated>2024-07-25T10:10:24.982Z</updated>
   <id>http://blog.seedganggames.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.seedganggames.com/muuradio/"/>
     <id>http://blog.seedganggames.com/muuradio/</id>
     <published>2024-06-05T17:55:05.000Z</published>
-    <updated>2024-06-05T21:10:49.803Z</updated>
+    <updated>2024-07-25T10:10:24.982Z</updated>
     
     
     <summary type="html">&lt;p&gt;I’ve been trying to do more writeups of past projects recently - here’s one that I made a few years back, but never really publicised.&lt;/p&gt;
@@ -59,7 +59,7 @@
     <link href="http://blog.seedganggames.com/flowgrammer/"/>
     <id>http://blog.seedganggames.com/flowgrammer/</id>
     <published>2024-05-09T15:27:40.000Z</published>
-    <updated>2024-05-17T11:09:42.862Z</updated>
+    <updated>2024-07-25T10:10:24.975Z</updated>
     
     
     <summary type="html">&lt;p&gt;Last month I started a little project called Flowgrammer. It’s a prototype visual scripting language aimed at teaching children and adults programming concepts.&lt;/p&gt;
@@ -88,7 +88,7 @@
     <link href="http://blog.seedganggames.com/Counter-Strike-2D-Viewer/"/>
     <id>http://blog.seedganggames.com/Counter-Strike-2D-Viewer/</id>
     <published>2024-05-06T16:39:51.000Z</published>
-    <updated>2024-05-07T14:26:27.291Z</updated>
+    <updated>2024-07-25T10:10:24.956Z</updated>
     
     
     <summary type="html">&lt;p&gt;Counter-Strike is a fun game. Over lockdown, I got into the E-Sports side of things, and eventually I made an in-browser 2D replay viewer as a little personal project back in the summer of 2023. I remembered it recently and wanted to write a blogpost about it.&lt;/p&gt;
@@ -123,7 +123,7 @@
     <link href="http://blog.seedganggames.com/vectorpark-egg/"/>
     <id>http://blog.seedganggames.com/vectorpark-egg/</id>
     <published>2022-11-05T19:23:52.000Z</published>
-    <updated>2024-05-09T16:06:41.357Z</updated>
+    <updated>2024-07-25T10:10:24.988Z</updated>
     
     
     <summary type="html">&lt;p&gt;With the news that &lt;a href=&quot;https://vectorpark.itch.io/windosill&quot;&gt;Windosill&lt;/a&gt; is &lt;a href=&quot;https://twitter.com/vectorpark/status/1588577343865774080&quot;&gt;going to be released for the Nintendo Switch&lt;/a&gt; I wanted to write a bit about Vectorpark and how much their work affected me artistically and educationally growing up.&lt;/p&gt;
@@ -154,7 +154,7 @@
     <link href="http://blog.seedganggames.com/quick-wfc-demo/"/>
     <id>http://blog.seedganggames.com/quick-wfc-demo/</id>
     <published>2022-07-13T13:04:04.000Z</published>
-    <updated>2024-05-17T11:03:47.607Z</updated>
+    <updated>2024-07-25T10:10:24.987Z</updated>
     
     
     <summary type="html">&lt;p&gt;Over the last couple of months I’ve been working on a implementation of the Wave Function Collapse algorithm, which is for creating large patterns out of a selection of smaller tiles that can fit together. It’s kind of like playing &lt;a href=&quot;https://www.google.com/search?q=carcassonne+game&amp;tbm=isch&quot;&gt;the board game Carcassone&lt;/a&gt;, where there’s a grid of potential places a tile can go, and deciding whether the tile can sit in that position is based on whether the edges of that tile match the neighbouring edges. If you haven’t played it before, it looks like this:&lt;/p&gt;
@@ -193,7 +193,7 @@
     <link href="http://blog.seedganggames.com/evaze-released/"/>
     <id>http://blog.seedganggames.com/evaze-released/</id>
     <published>2022-07-01T15:55:00.000Z</published>
-    <updated>2022-07-01T16:15:10.285Z</updated>
+    <updated>2024-07-25T10:09:46.394Z</updated>
     
     
       
@@ -225,7 +225,7 @@
     <link href="http://blog.seedganggames.com/Brian-Is-Burning/"/>
     <id>http://blog.seedganggames.com/Brian-Is-Burning/</id>
     <published>2022-04-07T13:38:46.000Z</published>
-    <updated>2022-06-14T12:45:03.698Z</updated>
+    <updated>2024-07-25T10:09:46.381Z</updated>
     
     
       
@@ -254,7 +254,7 @@
     <link href="http://blog.seedganggames.com/Slime-sim/"/>
     <id>http://blog.seedganggames.com/Slime-sim/</id>
     <published>2022-02-28T19:29:26.000Z</published>
-    <updated>2023-06-14T07:30:47.248Z</updated>
+    <updated>2024-07-25T10:09:46.390Z</updated>
     
     
       
@@ -281,7 +281,7 @@
     <link href="http://blog.seedganggames.com/zoo/"/>
     <id>http://blog.seedganggames.com/zoo/</id>
     <published>2022-02-28T17:51:26.000Z</published>
-    <updated>2022-02-28T19:35:48.389Z</updated>
+    <updated>2024-07-25T10:09:46.473Z</updated>
     
     
       
@@ -309,7 +309,7 @@
     <link href="http://blog.seedganggames.com/New-Blog/"/>
     <id>http://blog.seedganggames.com/New-Blog/</id>
     <published>2022-02-22T15:44:25.000Z</published>
-    <updated>2022-02-28T18:30:23.992Z</updated>
+    <updated>2024-07-25T10:09:46.389Z</updated>
     
     
       
@@ -334,7 +334,7 @@
     <link href="http://blog.seedganggames.com/Elephants-never-tumble/"/>
     <id>http://blog.seedganggames.com/Elephants-never-tumble/</id>
     <published>2021-10-06T18:04:25.000Z</published>
-    <updated>2022-06-08T12:18:42.991Z</updated>
+    <updated>2024-07-25T10:09:46.387Z</updated>
     
     
       
@@ -364,7 +364,7 @@
     <link href="http://blog.seedganggames.com/Two-Player/"/>
     <id>http://blog.seedganggames.com/Two-Player/</id>
     <published>2021-01-17T20:00:21.000Z</published>
-    <updated>2023-01-13T21:57:02.476Z</updated>
+    <updated>2024-07-25T10:10:24.974Z</updated>
     
     
       
