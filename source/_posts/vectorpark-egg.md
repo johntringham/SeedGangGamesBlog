@@ -7,6 +7,10 @@ date: 2022-11-05 19:23:52
 tags: [blog, ramble]
 ---
 
+**Update October 2025:** Vectorpark has ported egg.swf to desktop - you can [download it on Itch now](https://vectorpark.itch.io/egg)!
+
+----
+
 With the news that [Windosill](https://vectorpark.itch.io/windosill) is [going to be released for the Nintendo Switch](https://twitter.com/vectorpark/status/1588577343865774080) I wanted to write a bit about Vectorpark and how much their work affected me artistically and educationally growing up.
 
 ## Background - Early Flash
@@ -55,8 +59,11 @@ I cannot describe how many thousands of hours I have spent thinking about egg.sw
 
 {%video /vectorpark-egg/eggroll1.mp4 %}
 
-> You can download the actual swf file from the internet archive [here](https://web.archive.org/web/20031003090810oe_/http://vectorpark.com/films/egg.swf), but you might not be able to play it without having the Flash player installed on your PC somewhere. Unfortunately, Ruffle.js doesn't play egg.swf correctly, and Vectorpark hasn't rereleased egg.swf as a standalone game after Adobe killed Flash.
-> [You can however watch this full play through I uploaded to Youtube](https://www.youtube.com/watch?v=WMiLNKnlsRY)
+> ~~You can download the actual swf file from the internet archive [here](https://web.archive.org/web/20031003090810oe_/http://vectorpark.com/films/egg.swf), but you might not be able to play it without having the Flash player installed on your PC somewhere. Unfortunately, Ruffle.js doesn't play egg.swf correctly, and Vectorpark hasn't rereleased egg.swf as a standalone game after Adobe killed Flash.~~
+>
+> ***2025 Update**: Vectorpark has ported egg.swf to desktop - you can [download it on Itch now](https://vectorpark.itch.io/egg) as pay-what-you-want!*
+>
+> [I've also uploaded a full play through to Youtube](https://www.youtube.com/watch?v=WMiLNKnlsRY) - but I really recommend playing it instead.
 
 Being a relatively-inexperienced Flash 5 developer and seeing egg.swf for the first time felt like finding a painting that could talk. It felt like entering a woodworking competition and finding out that one of the other competitors had successfully made a living cat. It felt like meeting someone at a party who claimed they could eat a car whole, and then seeing them do it.
 
